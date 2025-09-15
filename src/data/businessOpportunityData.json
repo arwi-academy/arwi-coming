@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Paket 1 Miliar",
+    "description": "Paket lengkap untuk memulai kampus dengan fasilitas komprehensif dan ruang yang memadai untuk operasional pendidikan.",
+    "price": "1M",
+    "action": "Hubungi Kami",
+    "features": [
+      "2 Ruang Kelas",
+      "Lab Komputer Lengkap",
+      "1 Ruang Admin",
+      "Ruang Tamu"
+    ],
+    "link": "https://wa.me/6282297898514?text=Halo%20ARWI,%20saya%20tertarik%20dengan%20Paket%20Business%20Opportunity%201%20Miliar.%20Mohon%20informasi%20lebih%20detail%20mengenai%20fasilitas,%20persyaratan,%20dan%20proses%20kemitraan.%20Terima%20kasih."
+  },
+  {
+    "title": "Paket 500 Juta",
+    "description": "Paket starter yang ideal untuk memulai kampus dengan fasilitas dasar yang diperlukan untuk operasional awal.",
+    "price": "500jt",
+    "action": "Hubungi Kami",
+    "features": [
+      "1 Ruang Kelas",
+      "1 Ruang Admin",
+      "1 Lab"
+    ],
+    "link": "https://wa.me/6282297898514?text=Halo%20ARWI,%20saya%20tertarik%20dengan%20Paket%20Business%20Opportunity%20500%20Juta.%20Mohon%20informasi%20lebih%20detail%20mengenai%20fasilitas,%20persyaratan,%20dan%20proses%20kemitraan.%20Terima%20kasih."
+  }
+]

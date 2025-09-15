@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Bootcamp Remote Work",
+    "description": "Bootcamp Remote Work adalah program pelatihan intensif yang dilakukan selama 4 bulan dan dirancang untuk mempersiapkan individu menjadi Arwi profesional.",
+    "price": "35jt",
+    "discount": "20jt",
+    "action": "Daftar Sekarang",
+    "recurring": true,
+    "item": "bidang peminatan",
+    "features": [
+      "Proses belajar selama 16 minggu",
+      "Sesi mentoring intensif dengan mentor berpengalaman",
+      "Membangun portofolio & personal branding",
+      "Proyek akhir yang relevan dengan industri",
+      "Sertifikat"
+    ],
+    "link": "https://wa.me/6282297898514?text=Halo%20ARWI,%20saya%20ingin%20mendaftar%20Bootcamp%20Remote%20Work."
+  },
+  {
+    "title": "🌟 Boarding School Remote Work 🌟",
+    "description": "Boarding School Remote Work adalah program pelatihan super intensif yang dilakukan selama 12 bulan dan peserta didik akan dipastikan mendapatkan pekerjaan.",
+    "price": "60jt",
+    "discount": "",
+    "action": "Daftar Sekarang",
+    "recurring": true,
+    "item": "bidang peminatan",
+    "features": [
+      "Semua yang ada di Bootcamp Remote Work, ditambah:",
+      "Proses belajar super intensif selama 12 bulan",
+      "Sudah termasuk tempat tinggal, makan, dan laundry",
+      "Kesempatan bekerja di perusahaan partner Arwi",
+      "Jaminan mendapatkan pekerjaan"
+    ],
+    "link": "https://wa.me/6282297898514?text=Halo%20ARWI,%20saya%20ingin%20mendaftar%20Boarding%20School%20Remote%20Work."
+  }
+]

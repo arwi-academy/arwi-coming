@@ -1,0 +1,17 @@
+---
+import Accordion from "../ui/Accordion.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+import Section from "./Section.astro";
+
+const description = "Pertanyaan yang sering diajukan oleh calon peserta Kampus RWID. Di sini, kamu dapat menemukan jawaban atas pertanyaan umum seputar program, pendaftaran, dan lainnya.";
+---
+
+<Section id="process">
+  <div class="mt-10">
+    <SectionTitle
+      sectionTitle="Paling Sering Ditanyakan"
+      description={description}
+    />
+    <Accordion />
+  </div>
+</Section>

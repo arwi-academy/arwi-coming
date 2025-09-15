@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import Card from "../ui/Card.astro";
+import Section from "./Section.astro";
+
+import propImg from "../../assets/pics/tugu.jpg";
+import propImg2 from "../../assets/pics/malioboro.jpg";
+---
+
+<Section>
+  <Card>
+    <div
+      class="flex bg-[#F3F3F3] rounded-[45px] px-7 py-10 md:p-[60px] relative mt-[50px] lg:mt-[200px] lg:mb-[123px]"
+    >
+      <div class="w-full md:w-[50%] flex flex-col gap-[26px]">
+        <h2 class="text-3xl font-medium">Kenapa Harus di Yogyakarta?</h2>
+        <Image
+          src={propImg}
+          alt="Tugu Pal Putih Yogyakarta foto oleh Angga Kurniawan at Unsplash"
+          class="md:hidden flex lg:h-full lg:w-auto rounded-3xl shadow-[0px_5px_0px_#191a23] grayscale"
+        />
+        <p>
+          Yogyakarta adalah kota di mana budaya, teknologi, dan kreativitas bertemu. Kota ini mendukung proses belajar yang tenang tapi progresif, persis seperti karakter yang kamu butuhkan untuk bisa menjadi seorang Arwi profesional.
+        </p>
+        <Image
+          src={propImg2}
+          alt="Gedung Agung Yogyakarta foto oleh Rendi Novantino at Unsplash"
+          class="md:hidden flex lg:h-full lg:w-auto rounded-3xl shadow-[0px_5px_0px_#191a23] grayscale"
+        />
+        <p>
+          Sebagai Kota Pendidikan, kamu akan berada di tengah atmosfer yang reflektif dan penuh ruang untuk tumbuh, sehingga kamu bisa membangun fondasi remote work dengan lebih utuh: disipin, integritas, dan optimisme.
+        </p>
+        <p class="font-black text-xl">Batch terdekat: 🇮🇩 Agustus 2025 🇮🇩</p>
+        <p class="italic text-sm">*) Jika kamu kehabisan kursi, maka kamu harus menunggu (waiting list) hingga batch selanjutnya dibuka.</p>
+        <a href="https://wa.me/6282297898514" class="btn-primary text-center bg-blue text-white hover:bg-black hover:text-white shadow-[0px_5px_0px_#191a23]">Daftar Sekarang</a>
+      </div>
+      <picture
+        class="hidden md:flex flex-col absolute right-[-10%] lg:right-0 top-[-15%] h-[350px] items-center justify-center space-y-5 mt-36"
+      >
+        <Image
+          src={propImg}
+          alt="Tugu Pal Putih Yogyakarta foto oleh Angga Kurniawan"
+          class="hidden md:flex lg:h-full lg:w-auto rounded-3xl shadow-[0px_5px_0px_#191a23] grayscale"
+        />
+        <Image
+          src={propImg2}
+          alt="Gedung Agung Yogyakarta"
+          class="hidden md:flex lg:h-full lg:w-auto rounded-3xl shadow-[0px_5px_0px_#191a23] grayscale"
+        />
+      </picture>
+    </div>
+  </Card>
+</Section>

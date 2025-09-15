@@ -1,0 +1,112 @@
+---
+import SectionTitle from "../ui/SectionTitle.astro";
+import ServiceCard from "../ui/ServiceCard.astro";
+import Section from "./Section.astro";
+
+import c1 from "../../assets/pics/card-pic1.png";
+import c2 from "../../assets/pics/card-pic2.png";
+import c3 from "../../assets/pics/card-pic3.png";
+import c4 from "../../assets/pics/card-pic4.png";
+import c5 from "../../assets/pics/card-pic5.png";
+import c6 from "../../assets/pics/card-pic6.png";
+
+const cards = [
+  {
+    index: 1,
+    titleTop: "Virtual Assistant",
+    titleBottom: "",
+    description: "Bantu tugas administratif klien di luar negeri secara remote.",
+    img: c1,
+    alt: "VA",
+    link: "https://google.com",
+  },
+  {
+    index: 2,
+    titleTop: "UI/UX Design",
+    titleBottom: "",
+    description: "Desain antarmuka pengguna yang menarik dan fungsional.",
+    img: c2,
+    alt: "UI/UX",
+    link: "https://google.com",
+  },
+  {
+    index: 3,
+    titleTop: "Data Scraping",
+    titleBottom: "",
+    description: "Kumpulkan data dari berbagai sumber secara otomatis.",
+    img: c3,
+    alt: "Data",
+    link: "https://google.com",
+  },
+  {
+    index: 1,
+    titleTop: "Logo & Brand Identity",
+    titleBottom: "Design",
+    description: "Desain logo dan identitas merek yang kuat dan profesional.",
+    img: c4,
+    alt: "Logo",
+    link: "https://google.com",
+  },
+  {
+    index: 2,
+    titleTop: "Frontend Development",
+    titleBottom: "",
+    description: "Buat antarmuka pengguna yang responsif dan interaktif.",
+    img: c5,
+    alt: "FE",
+    link: "https://google.com",
+  },
+  {
+    index: 3,
+    titleTop: "Backend Development",
+    titleBottom: "",
+    description: "Kembangkan logika bisnis dan integrasi sistem.",
+    img: c6,
+    alt: "BE",
+    link: "https://google.com",
+  },
+  {
+    index: 1,
+    titleTop: "Quality Assurance",
+    titleBottom: "",
+    description: "Pastikan kualitas produk digital dengan pengujian yang menyeluruh.",
+    img: c6,
+    alt: "QA",
+    link: "https://google.com",
+  },
+  {
+    index: 2,
+    titleTop: "Fullstack Development",
+    titleBottom: "",
+    description: "Kembangkan aplikasi web dari frontend hingga backend.",
+    img: c6,
+    alt: "Backend",
+    link: "https://google.com",
+  },
+];
+
+const description =
+  "Kampus RWID menyediakan berbagai bidang peminatan yang dapat membantu kamu mengembangkan keterampilan digital dan mempersiapkan karir di industri teknologi.";
+---
+
+<Section id="services">
+  <div class="mt-[140px] mb-5">
+    <SectionTitle sectionTitle="Bidang Peminatan" description={description} />
+    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10 mb-20">
+      {
+        cards.map((card) => (
+          <ServiceCard
+            index={card.index}
+            titleTop={card.titleTop}
+            titleBottom={card.titleBottom}
+            img={card.img}
+            alt={card.alt}
+            link={card.link}
+            description={card.description}
+          />
+        ))
+      }
+    </div>
+    <SectionTitle sectionTitle="Bonus: Kelas GRATIS!" description={"Selain bidang peminatan di atas yang bisa kamu pilih, kamu juga akan mendapatkan akses ke kelas lintas bidang yang relevan secara GRATIS! Kelas ini meliputi Remote Work, Bahasa Inggris, proyek tim, serta membangun portfolio & personal branding."} />
+  </div>
+</Section>

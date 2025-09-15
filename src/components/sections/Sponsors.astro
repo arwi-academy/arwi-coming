@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import s3 from "../../assets/company/company-logo3.svg";
+import s5 from "../../assets/company/company-logo5.svg";
+import Section from "./Section.astro";
+
+import upwork from "../../assets/company/upwork.svg";
+import fiverr from "../../assets/company/Fiver-framed.svg";
+import github from "../../assets/company/Github-framed.svg";
+import behance from "../../assets/company/behance-4.svg";
+
+const sponsors = [
+  { logo: upwork, alt: "Upwork logo" },
+  { logo: s5, alt: "Dribble logo" },
+  { logo: github, alt: "GitHub logo" },
+  { logo: s3, alt: "Notion logo" },
+  { logo: fiverr, alt: "Fiverr logo" },
+  { logo: behance, alt: "Behance logo" },
+];
+---
+
+<Section id="sponsors">
+  <div class="flex-row items-center">
+  <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
+    {
+      sponsors.map((sponsor) => {
+        return (
+          <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+            <Image src={sponsor.logo} class="h-12 w-auto mx-auto" alt={sponsor.alt} loading="lazy" />
+          </div>
+        );
+      })
+    }
+  </div>
+  </div>
+</Section>

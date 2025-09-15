@@ -1,0 +1,68 @@
+---
+import AccordionItem from "./AccordionItem.astro";
+
+const content = [
+{
+  index: 1,
+  title: "Berapa lama proses belajarnya?",
+  description: "Proses belajar di Kampus RWID berlangsung selama 16 minggu dengan metode pembelajaran intensif. Proses belajar dilakukan hari Senin-Jumat dengan jadwal 2-3 kelas per hari, dan tiap kelas berdurasi 2 jam."
+},
+{
+  index: 2,
+  title: "Kenapa ada banyak kelas per hari jika saya hanya memilih satu bidang peminatan?",
+  description: "Pengetahuan lintas bidang merupakan hal yang sangat penting dalam industri teknologi. Oleh karena itu, meskipun kamu hanya memilih satu bidang peminatan, kamu tetap akan mendapatkan materi dari bidang lain yang relevan secara GRATIS seperti Remote Work, Bahasa Inggris, proyek tim, serta membangun portfolio & personal branding. Hal ini bertujuan untuk memperluas wawasan dan keterampilan, sehingga kamu lebih siap menghadapi tantangan di dunia kerja."
+},
+{
+  index: 3,
+  title: "Apakah ada jaminan kerja setelah lulus?",
+  description: "Kampus RWID memiliki jaringan luas dengan berbagai perusahaan di industri teknologi. Kami menjamin bahwa kami akan memberikan pendampingan sampai peserta mendapatkan pekerjaan sesuai tenggat waktu masa bootcamp, namun kami tidak memberikan jaminan kerja."
+},
+{
+  index: 4,
+  title: "Apakah pembelajaran bisa dilakukan secara online?",
+  description: "Tidak. Pembelajaran di Kampus RWID hanya dilakukan secara tatap muka di Yogyakarta. Kami sangat percaya bahwa interaksi langsung dengan mentor dan teman sekelas adalah hal yang sangat penting untuk proses belajar yang efektif."
+},
+{
+  index: 5,
+  title: "Saya dari luar Yogyakarta, apakah bisa ikut?",
+  description: "Tentu saja! Kampus RWID terbuka untuk peserta dari seluruh Indonesia. Jika dibutuhkan, kami menyediakan informasi mengenai akomodasi dan tempat tinggal di Yogyakarta bagi peserta yang datang dari luar kota."
+},
+{
+  index: 6,
+  title: "Apakah ada batasan usia untuk mendaftar?",
+  description: "Tidak ada batasan usia untuk mendaftar di Kampus RWID. Kami menyambut peserta dari berbagai latar belakang dan usia, asalkan memiliki motivasi dan komitmen yang kuat untuk belajar dan berkarir di industri teknologi."
+},
+{
+  index: 7,
+  title: "Saya belum memiliki pengalaman kerja di bidang teknologi, apakah saya bisa mendaftar?",
+  description: "Tentu saja! Kampus RWID dirancang untuk membantu peserta dari berbagai latar belakang, termasuk mereka yang baru memulai karir di bidang teknologi. Kami menyediakan materi pembelajaran yang komprehensif dan dukungan dari mentor berpengalaman untuk memastikan semua peserta dapat mengikuti program dengan baik."
+},
+{
+  index: 8,
+  title: "Saya masih bingung menentukan bidang peminatan yang ingin saya pilih, apakah ada bantuan?",
+  description: "Kami memahami bahwa memilih bidang peminatan bisa menjadi tantangan. Di Kampus RWID, kami menyediakan sesi asesmen dengan mentor untuk membantu peserta menentukan bidang yang paling sesuai dengan minat dan bakat. Kami juga memiliki berbagai sumber daya yang dapat membantu peserta memahami lebih dalam tentang bidang peminatan yang tersedia."
+},
+{
+  index: 9,
+  title: "Bagaimana dengan skema pembayarannya?",
+  description: "Kampus RWID menyediakan skema pembayaran yang fleksibel. Peserta dapat membayar biaya bootcamp secara penuh di awal program atau memilih opsi cicilan selama 4 bulan. Informasi lebih lanjut mengenai skema pembayaran dapat langsung ditanyakan kepada admin kami."
+},
+{
+  index: 10,
+  title: "Saya ingin bertanya lebih lanjut, bagaimana cara menghubungi admin?",
+  description: "Untuk pertanyaan lebih lanjut, kamu dapat menghubungi admin kami melalui WhatsApp di nomor 0822-9789-8514. Kami siap membantu menjawab semua pertanyaan yang kamu miliki mengenai program bootcamp di Kampus RWID."
+}
+];
+---
+
+{
+  content.map((item) => {
+    return (
+      <AccordionItem
+        index={item.index}
+        title={item.title}
+        description={item.description}
+      />
+    );
+  })
+}

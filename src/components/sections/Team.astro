@@ -1,0 +1,118 @@
+---
+import SectionTitle from "../ui/SectionTitle.astro";
+import TeamCard from "../ui/TeamCard.astro";
+import Section from "./Section.astro";
+
+const description =
+  "Dengan pengalaman dan keahlian yang luas, tim mentor Kampus RWID akan membimbing kamu dalam setiap langkah perjalanan karirmu, mulai dari proses pembelajaran hingga pencarian kerja.";
+
+import hanif from "../../assets/team/hanif.jpeg";
+import diky from "../../assets/team/diky.jpeg";
+import adi from "../../assets/team/adi.jpeg";
+import umam from "../../assets/team/umam.jpeg";
+import fikrie from "../../assets/team/fikrie.jpeg";
+import rian from "../../assets/team/rian.jpeg";
+import irham from "../../assets/team/irham.jpeg";
+import isnani from "../../assets/team/isnani.jpeg";
+import feri from "../../assets/team/feri.jpeg";
+
+const team = [
+  {
+    pic: hanif,
+    name: "Hanif Zahidin",
+    role: "Mentor Desain Grafis",
+    description:
+      "Seorang desainer grafis berpengalaman yang telah bekerja dengan berbagai klien di industri kreatif. Ia memiliki keahlian dalam menciptakan desain yang menarik dan fungsional, serta memahami tren desain terkini.",
+    link: "https://www.linkedin.com/in/hanifzahidin/",
+  },
+  {
+    pic: diky,
+    name: "Diky Hadna",
+    role: "Mentor Remote Work",
+    description:
+      "Seorang profesional remote work yang telah berpengalaman dalam mengelola tim jarak jauh. Ia memiliki pemahaman mendalam tentang praktik terbaik dalam bekerja secara remote, termasuk manajemen waktu, komunikasi efektif, dan penggunaan alat kolaborasi.",
+    link: "https://www.linkedin.com/in/dkhd/",
+  },
+  {
+    pic: adi,
+    name: "Adi Utama",
+    role: "Mentor Manajemen Proyek",
+    description:
+      "Seorang manajer proyek berpengalaman yang telah sukses mengelola berbagai proyek di industri teknologi. Ia memiliki keahlian dalam perencanaan, pengorganisasian, dan pengawasan proyek untuk memastikan keberhasilan setiap inisiatif.",
+    link: "https://www.linkedin.com/in/adiutamaa/",
+  },
+  {
+    pic: umam,
+    name: "Misbachul Umam",
+    role: "Mentor UI/UX Design",
+    description:
+      "Seorang desainer UI/UX yang telah bekerja dengan berbagai perusahaan teknologi. Ia memiliki keahlian dalam menciptakan pengalaman pengguna yang intuitif dan menarik, serta memahami prinsip-prinsip desain yang efektif.",
+    link: "https://www.linkedin.com/in/misbachulumam/",
+  },
+  {
+    pic: fikrie,
+    name: "Fikrie Irfan",
+    role: "Mentor Virtual Assistant",
+    description:
+      "Seorang virtual assistant yang telah membantu berbagai klien dalam mengelola tugas-tugas administratif dan operasional. Ia memiliki keterampilan organisasi yang kuat dan mampu bekerja secara efisien dalam lingkungan remote.",
+    link: "https://www.linkedin.com/in/fikriirfanadristi/",
+  },
+  {
+    pic: rian,
+    name: "Rian Adi Saputro",
+    role: "Mentor Data Scraping",
+    description:
+      "Seorang ahli data scraping yang telah berpengalaman dalam mengumpulkan dan menganalisis data dari berbagai sumber. Ia memiliki keterampilan teknis yang kuat dalam pemrograman dan pengolahan data, serta memahami etika dan legalitas dalam pengumpulan data.",
+    link: "https://www.linkedin.com/in/rianaditro/",
+  },
+  {
+    pic: irham,
+    name: "M. Irham Maulana",
+    role: "Mentor Bahasa Inggris",
+    description:
+      "Seorang pengajar bahasa Inggris yang berpengalaman dalam mengajarkan bahasa Inggris untuk tujuan profesional. Ia memiliki metode pengajaran yang efektif dan mampu membantu peserta meningkatkan kemampuan bahasa Inggris mereka, baik lisan maupun tulisan.",
+    link: "#",
+  },
+  {
+    pic: isnani,
+    name: "Isnani",
+    role: "Mentor Virtual Assistant",
+    description:
+      "Seorang virtual assistant yang telah berpengalaman dalam membantu klien mengelola tugas-tugas administratif dan operasional. Ia memiliki keterampilan organisasi yang kuat dan mampu bekerja secara efisien dalam lingkungan remote.",
+    link: "https://www.linkedin.com/in/isnani-nani-896a4b1a4/",
+  },
+  {
+    pic: feri,
+    name: "Feri Lukmansyah",
+    role: "Mentor QA",
+    description:
+      "Seorang profesional quality assurance yang telah berpengalaman dalam menguji dan memastikan kualitas produk digital. Ia memiliki keterampilan analitis yang kuat dan mampu mengidentifikasi serta memperbaiki masalah dalam perangkat lunak.",
+    link: "https://www.linkedin.com/in/feri-lukmansyah-29a404178/",
+  },
+];
+---
+
+<Section id="about">
+  <div class="mt-10">
+    <SectionTitle sectionTitle="Tim Mentor" description={description} />
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10"
+    >
+      {
+        team.map((member, index) => (
+          <TeamCard
+            key={index}
+            pic={member.pic}
+            name={member.name}
+            role={member.role}
+            description={member.description}
+            link={member.link}
+          />
+        ))
+      }
+    </div>
+    <div class="flex justify-end my-10">
+      &nbsp;
+    </div>
+  </div>
+</Section>

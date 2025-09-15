@@ -1,0 +1,24 @@
+---
+import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import HeroIlust from "../../assets/pics/photo-4.jpeg";
+---
+
+<Section id="home">
+<div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+        <div class="text-left space-y-4">
+            <h1 class="text-4xl font-medium leading-none md:text-6xl text-center md:text-left">Bootcamp Remote Work Onsite #1</h1>
+            <p class="mt-6 mb-8 text-lg font-normal leading-7 sm:mb-12 md:text-left md:pr-12 text-justify">Dengan program intensif selama 16 minggu yang diselenggarakan secara tatap muka di Yogyakarta, kamu akan diarahkan menjadi seorang Arwi profesional dengan bimbingan langsung oleh mentor berpengalaman dengan metode yang sudah terbukti dan teruji.</p>
+            <p class="font-black text-xl text-center md:text-left">Batch terdekat: 🇮🇩 Agustus 2025 🇮🇩</p>
+            <div class="w-full justify-center md:justify-start items-center inline-flex">
+                <a href="https://wa.me/6282297898514" target="_blank" class="px-9 py-5 text-xl rounded-2xl border border-zinc-900 bg-blue hover:bg-black text-black hover:text-white inline-flex shadow-[0px_5px_0px_#191a23]">Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+        <Image src={HeroIlust} alt="Hero Ilustration" loading="eager" class="rounded-3xl shadow-[0px_5px_0px_#191a23] grayscale"/>
+    </div>
+</div>
+</Section>

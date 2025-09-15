@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+
+---
+
+<section class="sm:px-5">
+  <div class="w-full max-w-[1240px] mx-auto">
+    <div
+      class="px-[15px] bg-dark text-gray py-[55px] lg:px-[60px] sm:rounded-t-[45px]"
+    >
+      <div>
+        <div
+          class="flex flex-col lg:flex-row gap-7 items-center justify-between"
+        >
+          <picture>
+            <a href="#home">
+              <Image src="/ARWI.svg" alt="Arwi Logo" height={300} width={300}/>
+            </a>
+          </picture>
+        </div>
+
+        <div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]">
+          <div
+            class="flex text-center lg:text-start flex-col w-full lg:w-[50%]"
+          >
+            <h3 class="mb-5 text-center md:text-left text-2xl text-white">Hubungi kami</h3>
+            <div class="flex flex-col justify-between gap-4">
+              <span> WhatsApp: <a href="https://wa.me/6282297898514" target="_blank" class="hover:text-blue">0822-9789-8514</a> </span>
+              <span class="lg:w-3/4">
+                Alamat: <a href="https://maps.app.goo.gl/Ver5KQHHPuACpjNr7" target="_blank" class="hover:text-blue">Jl. Kaliurang KM 5, Caturtunggal, Depok, Sleman, Daerah Istimewa Yogyakarta, 55281</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-[1px] bg-gray mb-5"></div>
+      <div
+        class="flex flex-col lg:flex-row h-20 justify-center mt-4 text-center md:justify-between md:mt-0"
+      >
+        <span
+          >{new Date().getFullYear()} &mdash; Kampus RWID | Bootcamp Remote Work On-site #1 di Yogyakarta</span
+        >
+      </div>
+    </div>
+  </div>
+</section>
