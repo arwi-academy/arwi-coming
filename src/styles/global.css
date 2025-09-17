@@ -29,12 +29,12 @@
   }
 
   :root {
-    --blue: #2563eb;
+    --blue: #a7c7e7;
     --black: rgb(0, 0, 0);
     --dark: #191a23;
     --gray: #f3f3f3;
     --white: #ffffff;
-    --green: #2563eb; /* Changed to blue theme */
+    --green: #a7c7e7; /* Changed to soft pastel blue theme */
   }
 
   /* @layer base {
@@ -123,7 +123,7 @@
     }
 
     .bluehead {
-      @apply bg-[#2563eb] text-white rounded-[7px] p-[10px];
+      @apply bg-[#a7c7e7] text-[#374151] rounded-[7px] p-[10px];
     }
 
     .whitehead {
